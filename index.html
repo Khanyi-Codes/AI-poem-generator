@@ -10,11 +10,12 @@
 </head>
 <body>
     <div class ="container">
-    <heading>AI Poem Generator</heading>
+    <h1>AI Poem Generator</h1>
   <main>
+    <div class = "form-container">
     <form id = "poem-generator-form">
         <input type="text"
-             placeholder="Enter the topic for your poem"
+             placeholder="Enter the topic of the poem you want to generate"
             autofocus
             required
             autocomplete="off"
@@ -22,8 +23,11 @@
             id = "user-instructions"
         />
         <input type="submit"  class = "submit-button"/>
+    
     </form>
-    <div class = "poem" id = "poem">
+    <small class = "hint">Eg. Love, Nature, Happiness</small>  
+    </div>
+    <div class = "poem hidden" id = "poem">
         
     </div>
   </main>
